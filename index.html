@@ -313,10 +313,11 @@
             
             <input type="text" id="user-name" class="login-input" placeholder="Enter Your Name...">
             
-            <div class="human-verify-box" onclick="document.getElementById('human-check').click()">
+            <!-- FIXED: Changed div to label to prevent the double-click bug -->
+            <label class="human-verify-box">
                 <input type="checkbox" id="human-check" class="verify-checkbox">
                 <span>I am a human being</span>
-            </div>
+            </label>
             
             <button onclick="attemptLogin()" class="btn-pulse w-full py-3 bg-cyan-500 text-black font-bold rounded-lg font-orbitron hover:bg-white transition-all">
                 INITIALIZE SESSION →
